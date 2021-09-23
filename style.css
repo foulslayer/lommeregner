@@ -1,0 +1,94 @@
+* {
+    border: 0;
+    background-color: #283966;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    margin: 0;
+   
+   
+}
+
+body{
+    border: solid 25px black;
+
+
+}
+
+.grid-container {
+    height: 100vh ;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 100px 100px 100px; /* hvis sætte 100px 100px lave den 2 rows*/
+    grid-auto-rows: 100px; /* grid auto rows gør at sidst rows er det */
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    border: solid 10px green;
+   
+
+
+    grid-row-gap: 7px; /* kan bruge grid-gap : 7px 7px; isted for grid-row-gap and grid-colum-gap */
+    grid-column-gap: 7px;
+}
+
+#DisplayNumber{
+    width: 10cm;
+    background-color: white;
+    
+
+/*.div.grid-container {*/
+
+
+
+.grid-item {
+   
+}
+
+.grid-item button {
+	box-shadow:inset 1px 0px 7px 1px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:30px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:20px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+   
+}
+.grid-item button:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+
+.grid-item button:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
+.item-0  {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 1;
+    
+}
+
+    
+}
+
+input {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+}
